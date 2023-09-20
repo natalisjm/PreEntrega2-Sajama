@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@700&family=Montserrat:wght@100&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,47 +7,57 @@
     color: white;
     /* border: red 1px solid; */
 }
+
 body {
     font-family: 'Anuphan', sans-serif;
 }
+
 .header_logo {
     width: 250px;
     cursor: pointer;
 }
+
 li {
     list-style: none;
     padding: 20px 40px;
     display: inline-block;
 }
+
 .container-fluid {
     background-color: #181717;
 }
+
 ul li a {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
 }
+
 .caja {
     background: linear-gradient(rgba(12, 12, 12, 0.75), rgba(12, 12, 12, 1)), url(../assets/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 35%;
 }
+
 .texto {
     padding-top: 300px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "img text";
 }
+
 .caja_img {
     grid-area: img;
 }
+
 .caja_img {
     display: flex;
     justify-content: center;
     padding-left: 230px;
 
 }
+
 .caja_texto {
     grid-area: text;
     width: 400px;
@@ -95,12 +106,14 @@ footer {
     background-color: #181717;
     padding: 50px 70px;
 }
+
 .redes {
     display: flex;
     justify-content: space-around;
     padding: 15px 250px;
 
 }
+
 .redes img {
     width: 40px;
 }
@@ -110,55 +123,66 @@ footer {
     justify-content: center;
     padding-bottom: 100px;
 }
+
 .caja_his {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "img textuno"
-    "textdos imgdos";
+        "img textuno"
+        "textdos imgdos";
 }
+
 .caja_his-img {
     grid-area: img;
     padding: 30px 50px;
 }
+
 .caja_his-img img {
     width: 500px;
 }
+
 .caja_his-imgdos {
     grid-area: imgdos;
     padding: 30px 50px;
 }
+
 .caja_his-imgdos img {
     width: 500px;
 }
+
 .textuno {
     grid-area: textuno;
 }
+
 .textdos {
     grid-area: textdos;
 }
+
 .caja_his-p {
     display: flex;
     flex-direction: column;
     justify-content: left;
 }
+
 .caja_his-p {
     width: 600px;
     padding: 30px 50px;
     line-height: 20px;
 }
+
 .form h2 {
     display: flex;
     justify-content: center;
     padding-top: 5%;
 }
+
 .form_text {
     display: flex;
     justify-content: center;
     padding-left: 300px;
 }
 
- @media (max-width:480px) {
+@media (max-width:480px) {
     .texto {
         display: flex;
         flex-direction: column;
@@ -166,45 +190,96 @@ footer {
         align-items: center;
         padding-top: 15%;
     }
+
     .caja {
         padding-bottom: 10%;
     }
+
     .caja_texto h1 {
         display: flex;
         justify-content: center;
     }
+
     .caja_img {
         justify-content: center;
         padding-left: 20px;
         padding-top: 20px;
     }
+
     .caja_his {
         display: flex;
         flex-direction: column;
     }
+
     .caja_his-img img {
-        width: 400px;
+        width: 350px;
     }
+
     .caja_his-img {
         display: flex;
         align-items: center;
         padding: 30px 30px;
     }
+
     .caja_his-p {
         width: auto;
-        display: flex;
         padding: 20px 20px;
     }
+
     .caja_his-imgdos img {
-        width: 400px;
+        width: 350px;
     }
+
     .caja_his-imgdos {
         display: flex;
         align-items: center;
         padding: 20px 30px;
     }
+
     .redes {
-        /* display: flex; */
         padding: 15px 30px;
     }
- }
+    /* contacto */
+    .form_text {
+        padding-left: 30px;
+    }
+}
+
+@media (min-width:480px) and (max-width:1024px) {
+    .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caja_img {
+        padding: 20px 10px;
+    }
+
+    .caja_img img {
+        width: 400px;
+    }
+
+    /* historia */
+    li {
+        list-style: none;
+        padding: 20px 30px;
+        display: inline-block;
+    }
+
+    .caja_his-p {
+        width: 500px;
+        padding: 30px 10px;
+    }
+
+    .caja_his-img img {
+        width: 400px;
+    }
+    .caja_his-imgdos {
+        padding: 10px 10px;
+    }
+    
+    .caja_his-imgdos img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,24 @@
+footer {
+    text-align: center;
+    background-color: $background-color_2;
+    padding: 50px 70px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 250px;
+
+    img {
+        width: 40px;
+    }
+}
+
+.fondo {
+    h3 {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 100px;
+    }
+}

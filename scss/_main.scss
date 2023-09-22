@@ -1,0 +1,94 @@
+@mixin tamBorder {
+    width: 400px;
+    border: solid;
+
+}
+
+.caja {
+    background: linear-gradient(rgba(12, 12, 12, 0.75), rgba(12, 12, 12, 1)), url(../assets/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 35%;
+}
+
+.texto {
+    padding-top: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img text";
+}
+
+.caja_img {
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    padding-left: 230px;
+}
+
+.caja_texto {
+    grid-area: text;
+    width: 400px;
+    line-height: 25px;
+}
+
+.fondo {
+    background-color: $background-color_1;
+}
+
+.caja_his {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img textuno" "textdos imgdos";
+}
+
+.caja_his-img {
+    grid-area: img;
+    padding: 30px 50px;
+
+    img {
+        width: 500px;
+    }
+}
+
+.caja_his-imgdos {
+    grid-area: imgdos;
+    padding: 30px 50px;
+
+    img {
+        width: 500px;
+    }
+}
+
+.textuno {
+    grid-area: textuno;
+}
+
+.textdos {
+    grid-area: textdos;
+}
+
+.caja_his-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 600px;
+    padding: 30px 50px;
+    line-height: 20px;
+}
+
+.intBorder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        @include tamBorder;
+    }
+
+    p {
+        width: 400px;
+    }
+    h4 {
+        padding: 20px 20px;
+    }
+}

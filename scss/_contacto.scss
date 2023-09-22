@@ -1,0 +1,54 @@
+form {
+    padding: 50px 50px;
+    width: 700px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: $color_1;
+}
+
+input {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.formbtn {
+    background-color: $background-color_1;
+    color: $color_1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form {
+    h2 {
+        display: flex;
+        justify-content: center;
+        padding-top: 5%;
+    }
+}
+
+.form_text {
+    display: flex;
+    justify-content: center;
+    padding-left: 300px;
+}

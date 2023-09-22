@@ -1,0 +1,24 @@
+.header_logo {
+    width: 250px;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    padding: 20px 40px;
+    display: inline-block;
+}
+
+.container-fluid {
+    background-color: $background-color_1;
+}
+
+ul {
+    li {
+        a {
+            text-decoration: none;
+            color: $color_1;
+            text-transform: uppercase;
+        }
+    }
+}

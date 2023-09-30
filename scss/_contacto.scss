@@ -19,6 +19,17 @@ input {
     margin-bottom: 15px;
 }
 
+.formbtn {
+    background-color: rgb(18 18 18);
+    color: $color_1;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
 textarea {
     display: block;
     width: 50%;
@@ -28,16 +39,6 @@ textarea {
     margin-bottom: 15px;
 }
 
-.formbtn {
-    background-color: $background-color_1;
-    color: $color_1;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 10px;
-}
 
 .form {
     h2 {
